@@ -65,3 +65,30 @@ img { display: block; max-width: 100%; height: auto; }
 .section-bottom { text-align: center; padding-top: 53px; line-height: 20.75564px; }
 
 
+/* BLOG */
+.blog { min-height: 613px; position: relative; isolation: isolate; }
+.blog::after { content: ""; position: absolute; z-index: -1; right: -1px; top: 129px; width: 431px; height: 685px; background: url("images/background-1749.png") right top / contain no-repeat; }
+.blog > .container { width: 1174px; position: relative; left: -4px; }
+.blog .eyebrow { position: relative; top: 1px; margin-left: 14px; margin-bottom: 24px; }
+.blog .section-heading { margin-left: 6px; margin-bottom: 56px; }
+.blog .section-heading h2 { position: relative; top: -9px; }
+.blog .section-heading .section-arrows { position: relative; top: 2px; margin-bottom: 19px; margin-right: 1px; }
+.blog-grid { display: grid; grid-template-columns: repeat(3, 373px); gap: 27.5px; }
+.blog-card { height: 353px; padding: 51px 29px 44px 45px; background: white; box-shadow: var(--shadow); display: flex; flex-direction: column; }
+.blog-card h3 { font-size: 18px; line-height: 20.75564px; }
+.blog-card time { color: var(--muted); font-size: 14px; line-height: 30px; letter-spacing: .01em; margin-top: 10px; }
+.blog-card p { line-height: 30px; margin-top: 24px; }
+.post-arrow { align-self: end; margin-top: auto; flex: 0 0 auto; }
+.blog-card.featured { color: white; background: var(--red); }
+.blog-card.featured time { color: white; }
+
+/* Preserve the line breaks of Photoshop's text boxes at the reference width.
+   Small tracking corrections compensate for the browser's font metrics. */
+.psd-line { display: block; white-space: nowrap; }
+.about-description { position: relative; left: -1px; }
+.about-description > .psd-line:nth-child(1) { letter-spacing: .012em; }
+.about-description > .psd-line:nth-child(3) { letter-spacing: .02em; }
+.about-description > .psd-line:nth-child(4) { letter-spacing: .012em; }
+.about-description > .psd-line:nth-child(5) { letter-spacing: .015em; }
+.blog-card:not(.featured) .psd-line:last-child { letter-spacing: .018em; }
+
