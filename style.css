@@ -49,3 +49,19 @@ img { display: block; max-width: 100%; height: auto; }
 .about-copy .section-arrows { margin-top: 48px; margin-left: 1px; }
 
 
+/* PORTFOLIO: six original placeholders. */
+.portfolio { min-height: 1000px; position: relative; isolation: isolate; }
+.portfolio::before { content: ""; position: absolute; z-index: -1; left: -1px; top: 72px; width: 927px; height: 930px; background: url("images/background-692.png") left top / contain no-repeat; }
+.portfolio > .container { position: relative; left: -5px; }
+.section-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; }
+.portfolio .section-heading { margin-bottom: 70px; }
+.portfolio .section-heading .section-arrows { margin-right: -2px; }
+.portfolio .section-heading h2 { position: relative; left: 3px; top: -5px; }
+.section-heading .section-arrows { margin-bottom: 16px; }
+.work-grid { display: grid; grid-template-columns: repeat(3, 371px); gap: 31px 28px; }
+.work-card { aspect-ratio: 371 / 281; background: var(--placeholder); }
+/* A hover leaves the original tile unchanged: no invented overlay, title or animation. */
+.work-card:hover { background: var(--placeholder); }
+.section-bottom { text-align: center; padding-top: 53px; line-height: 20.75564px; }
+
+
